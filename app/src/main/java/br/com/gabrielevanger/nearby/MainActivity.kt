@@ -1,4 +1,4 @@
-package com.example.nearby
+package br.com.gabrielevanger.nearby
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.nearby.ui.theme.NearbyTheme
+import br.com.gabrielevanger.nearby.ui.theme.NearbyTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
