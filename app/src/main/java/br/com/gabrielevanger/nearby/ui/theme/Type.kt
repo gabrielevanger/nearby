@@ -1,4 +1,4 @@
-package com.example.nearby.ui.theme
+package br.com.gabrielevanger.nearby.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
@@ -6,7 +6,8 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.example.nearby.R
+import br.com.gabrielevanger.nearby.R
+
 
 val rubikFontFamily = FontFamily(
     Font(R.font.rubik, FontWeight.Normal),

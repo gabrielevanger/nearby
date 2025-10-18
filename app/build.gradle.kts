@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nearby"
+    namespace = "br.com.gabrielevanger.nearby"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.nearby"
+        applicationId = "br.com.gabrielevanger.br.com.gabrielevanger.nearby"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
