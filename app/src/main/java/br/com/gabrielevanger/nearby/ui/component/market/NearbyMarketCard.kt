@@ -1,4 +1,4 @@
-package br.com.gabrielevanger.nearby.ui.theme.component.market
+package br.com.gabrielevanger.nearby.ui.component.market
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -66,7 +66,7 @@ fun NearbyMarketCard(
                     .height(IntrinsicSize.Min)
                     .aspectRatio(ratio = 1f, matchHeightConstraintsFirst = true),
                 contentScale = ContentScale.Crop,
-                painter = painterResource(R.drawable.img_burger), //Trocar pela imagem market.cover
+                painter = painterResource(R.drawable.img_burger), // TODO: Substituir pela imagem de market.cover
                 contentDescription = "Imagem do Estabelecimento"
             )
             Column {
@@ -86,12 +86,12 @@ fun NearbyMarketCard(
                 ) {
                     Icon(
                         modifier = Modifier.size(24.dp),
-                        tint = if (market.cupons > 0) RedBase else Gray400,
+                        tint = if (market.coupons > 0) RedBase else Gray400,
                         painter = painterResource(id = R.drawable.ic_ticket),
                         contentDescription = "Ícone de Cupom"
                     )
                     Text(
-                        text = "${market.cupons} Cupons disponiveis",
+                        text = "${market.coupons} cupons disponíveis",
                         color = Gray400,
                         style = Typography.bodyMedium.copy(fontSize = 12.sp)
                     )
@@ -105,18 +105,19 @@ fun NearbyMarketCard(
 @Composable
 private fun NearbyMarketCardPreview() {
     NearbyMarketCard(
-        modifier = Modifier.fillMaxWidth(), market = Market(
-            id = "012576ea-4441-89e5-d5f32104c7c4",
+        modifier = Modifier.fillMaxWidth(),
+        market = Market(
+            id = "012576ea-4441-4b8a-89e5-d5f32104c7c4",
             categoryId = "146b1a88-b3d3-4232-8b8f-c1f006f1e86d",
             name = "Sabor Grill",
-            description = "Churrascaria com cortes nobre e buffet variado. Experiência completa para os amantes de carne.",
-            cupons = 10,
-            rules = emptyList(),
+            description = "Churrascaria com cortes nobres e buffet variado. Experiência completa para os amantes de carne.",
+            coupons = 10,
+//            rules = emptyList(),
             latitude = -23.55974230991911,
-            longitude = -46.6581485249887,
+            longitude = -46.65814845249887,
             address = "Av. Paulista - Bela Vista",
             phone = "(11) 94567-1212",
-            cover = "https://images.unsplash.com/photo-1498654896293-37aacf113f9?w=400&h=300"
+            cover = "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400&h=300"
         ),
         onClick = {}
     )

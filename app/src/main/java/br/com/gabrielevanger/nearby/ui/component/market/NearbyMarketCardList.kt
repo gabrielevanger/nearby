@@ -1,4 +1,4 @@
-package br.com.gabrielevanger.nearby.ui.theme.component.market
+package br.com.gabrielevanger.nearby.ui.component.market
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.lazy.LazyColumn
