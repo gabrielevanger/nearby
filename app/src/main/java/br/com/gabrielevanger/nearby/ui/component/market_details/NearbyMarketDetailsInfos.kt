@@ -1,4 +1,4 @@
-package br.com.gabrielevanger.nearby.ui.theme.component.market_details
+package br.com.gabrielevanger.nearby.ui.component.market_details
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,14 +24,15 @@ fun NearbyMarketDetailsInfos(modifier: Modifier = Modifier, market: Market) {
     Column(
         modifier = modifier,
         verticalArrangement = Arrangement.spacedBy(16.dp)
-    ){
+    ) {
         Text(text = "Informações", style = Typography.headlineSmall, color = Gray400)
+
         Column(
             verticalArrangement = Arrangement.spacedBy(8.dp)
-        ){
-            Row (
+        ) {
+            Row(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ){
+            ) {
                 Icon(
                     modifier = Modifier.size(16.dp),
                     painter = painterResource(id = R.drawable.ic_ticket),
@@ -39,14 +40,15 @@ fun NearbyMarketDetailsInfos(modifier: Modifier = Modifier, market: Market) {
                     contentDescription = "Ícone Cupons"
                 )
                 Text(
-                    text = "${market.cupons} cupons disponíveis",
+                    text = "${market.coupons} cupons disponíveis",
                     style = Typography.labelMedium,
-                    color =  Gray500
+                    color = Gray500
                 )
             }
-            Row (
+
+            Row(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ){
+            ) {
                 Icon(
                     modifier = Modifier.size(16.dp),
                     painter = painterResource(id = R.drawable.ic_map_pin),
@@ -56,12 +58,13 @@ fun NearbyMarketDetailsInfos(modifier: Modifier = Modifier, market: Market) {
                 Text(
                     text = market.address,
                     style = Typography.labelMedium,
-                    color =  Gray500
+                    color = Gray500
                 )
             }
-            Row (
+
+            Row(
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
-            ){
+            ) {
                 Icon(
                     modifier = Modifier.size(16.dp),
                     painter = painterResource(id = R.drawable.ic_phone),
@@ -71,7 +74,7 @@ fun NearbyMarketDetailsInfos(modifier: Modifier = Modifier, market: Market) {
                 Text(
                     text = market.phone,
                     style = Typography.labelMedium,
-                    color =  Gray500
+                    color = Gray500
                 )
             }
         }

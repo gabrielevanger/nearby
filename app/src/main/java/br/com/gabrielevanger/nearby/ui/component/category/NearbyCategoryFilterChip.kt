@@ -1,4 +1,4 @@
-package br.com.gabrielevanger.nearby.ui.theme.component.category
+package br.com.gabrielevanger.nearby.ui.component.category
 
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
