@@ -1,4 +1,4 @@
-package br.com.gabrielevanger.nearby.ui.theme.component.category
+package br.com.gabrielevanger.nearby.ui.component.category
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.PaddingValues
@@ -43,7 +43,7 @@ fun NearbyCategoryFilterChipList(
                 isSelected = category.id == selectedCategoryId,
                 onClick = { isSelected ->
                     if (isSelected)
-                    selectedCategoryId = category.id
+                        selectedCategoryId = category.id
                 }
             )
         }

@@ -1,4 +1,4 @@
-package br.com.gabrielevanger.nearby.ui.theme.component.button
+package br.com.gabrielevanger.nearby.ui.component.button
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.layout.Arrangement
